@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code & Logs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    h1 {
+      margin-top: 20px;
+    }
+    .qr-container {
+      margin: 20px;
+      text-align: center;
+    }
+    .logs-container {
+      width: 80%;
+      max-width: 600px;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      overflow-y: auto;
+      max-height: 300px;
+      margin-top: 20px;
+    }
+    .logs-container p {
+      margin: 0;
+      padding: 5px 0;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+    <h1>QR Code Viewer</h1>
+    <div id="qr-container">
+        <p id="status">Waiting for QR Code...</p>
+        <img id="qrcode" src="" alt="QR Code will appear here" style="display: none;">
+    </div>
+
+  <div class="logs-container" id="logs"></div>
+  <button id="addLog">Add Log</button>
+
+ <!-- <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io();
+    const qrContainer = document.getElementById('qr-container');
+    const qrImage = document.getElementById('qrcode');
+    const statusText = document.getElementById('status');
+
+    // Verifica o status do WhatsApp no localStorage
+    const isReady = localStorage.getItem('whatsappReady');
+
+    // Se o WhatsApp já foi conectado, mostra a mensagem de sucesso
+    if (isReady) {
+        statusText.innerHTML = '✅ WhatsApp conectado com sucesso!';
+        statusText.style.color = 'green';
+        qrContainer.classList.add('hidden'); // Esconde o QR Code
+    }
+
+    // Quando receber o QR Code
+    socket.on('qr', (data) => {
+        if (!isReady) { // Exibe o QR Code apenas se o WhatsApp não estiver conectado
+            qrContainer.classList.remove('hidden'); // Mostra o QR Code
+            qrImage.src = data; // Define o QR Code recebido
+            statusText.textContent = 'Escaneie o QR Code para conectar ao WhatsApp.';
+            statusText.style.color = ''; // Restaura a cor original
+        }
+    });
+
+    // Quando o cliente estiver conectado
+    socket.on('ready', (message) => {
+        qrContainer.classList.add('hidden'); // Esconde o QR Code
+        statusText.innerHTML = `✅ ${message}`; // Mostra a mensagem de sucesso com o emoji
+        statusText.style.color = 'green'; // Altera a cor do texto para verde
+
+        // Salva o estado de conexão no localStorage
+        localStorage.setItem('whatsappReady', 'true');
+    });
+
+    // Quando o cliente for desconectado
+    socket.on('disconnected', (message) => {
+        qrContainer.classList.remove('hidden'); // Exibe o QR Code novamente
+        statusText.innerHTML = message; // Mostra a mensagem de desconexão
+        statusText.style.color = ''; // Restaura a cor original
+        localStorage.removeItem('whatsappReady'); // Remove o estado de conexão do localStorage
+    });
+  </script>-->
+</body>
+</html>
