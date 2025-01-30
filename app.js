@@ -37,25 +37,6 @@ const client = new Client({
 	},
 });
 
-// WEBSOCKET //
-/*io.on('connection', (socket) => {
-    // GERA O QR CODE //
-    client.on('qr', (qr) => {
-        console.log('QR code recebido. Escaneie com seu WhatsApp:');
-        qrcode.generate(qr, { small: true });
-
-        // Converte o QR Code em URL e envia ao frontend
-        const qrImageUrl = `https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(qr)}`;
-        socket.emit('qr', qrImageUrl);
-    });
-
-    // Notifica o frontend quando o WhatsApp estiver conectado
-    client.on('ready', () => {
-        console.log('WhatsApp conectado com sucesso!');
-        socket.emit('ready', 'WhatsApp conectado com sucesso!');
-    });
-});*/
-
 client.on('disconnected', (reason) => {
     console.log('WhatsApp foi desconectado!');
 
