@@ -20,14 +20,14 @@ Isso irá iniciar o servidor Express na porta 5000 (ou outra porta definida na v
 4. **Escaneie o QR Code**: Ao rodar o aplicativo, um QR code será gerado no terminal. Escaneie o QR code com o WhatsApp no seu celular para conectar à sua conta.
 
 ## 💡 Como funciona
-**Express**: O servidor é executado com Express, e ao acessar a raiz (/), ele serve o arquivo index.html.
-**WhatsApp Web**: O código usa o pacote whatsapp-web.js para conectar o WhatsApp Web via código e gerar o QR code.
-**Socket.IO**: Comunicação em tempo real entre o servidor e a página frontend utilizando o socket.io. A aplicação notifica quando o WhatsApp está conectado ou desconectado.
+**Express**: O servidor é executado com Express, e ao acessar a raiz (/), ele serve o arquivo index.html. \
+**WhatsApp Web**: O código usa o pacote whatsapp-web.js para conectar o WhatsApp Web via código e gerar o QR code. \
+**Socket.IO**: Comunicação em tempo real entre o servidor e a página frontend utilizando o socket.io. A aplicação notifica quando o WhatsApp está conectado ou desconectado. \
 ## 🛠️ Tecnologias Usadas
-**whatsapp-web.js**: Para interação com o WhatsApp Web.
-**Express**: Framework para criação do servidor web.
-**Socket.IO**: Comunicação em tempo real para o frontend.
-**QRCode-terminal**: Geração de QR code no terminal.
+**whatsapp-web.js**: Para interação com o WhatsApp Web. \
+**Express**: Framework para criação do servidor web. \
+**Socket.IO**: Comunicação em tempo real para o frontend. \ 
+**QRCode-terminal**: Geração de QR code no terminal. \
 ## ⚙️ Funcionalidades
 **QR Code**: Gera o QR code para escanear com o WhatsApp e conectar o WhatsApp Web.
 **Conexão com WhatsApp**: Após a autenticação, o sistema notifica quando o WhatsApp está conectado ou desconectado.
