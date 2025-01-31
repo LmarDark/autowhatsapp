@@ -29,11 +29,11 @@ Isso irá iniciar o servidor Express na porta 5000 (ou outra porta definida na v
 **Socket.IO**: Comunicação em tempo real para o frontend. <br>
 **QRCode-terminal**: Geração de QR code no terminal. <br>
 ## ⚙️ Funcionalidades
-**QR Code**: Gera o QR code para escanear com o WhatsApp e conectar o WhatsApp Web.
-**Conexão com WhatsApp**: Após a autenticação, o sistema notifica quando o WhatsApp está conectado ou desconectado.
-**Comando simples**: Responde com "pong..." sempre que o comando !ping for enviado ao bot.
+**QR Code**: Gera o QR code para escanear com o WhatsApp e conectar o WhatsApp Web. <br>
+**Conexão com WhatsApp**: Após a autenticação, o sistema notifica quando o WhatsApp está conectado ou desconectado. <br>
+**Comando simples**: Responde com "pong..." sempre que o comando !ping for enviado ao bot. <br>
 ## 🔧 Desenvolvimento
-**Conecte-se ao WhatsApp**: Após escanear o QR code, você verá no terminal a mensagem "WhatsApp conectado com sucesso!".
-**Desconexão**: Caso a conexão seja perdida, o sistema tentará reconectar automaticamente.
+**Conecte-se ao WhatsApp**: Após escanear o QR code, você verá no terminal a mensagem "WhatsApp conectado com sucesso!". <br>
+**Desconexão**: Caso a conexão seja perdida, o sistema tentará reconectar automaticamente. <br>
 ## 📝 Licença
 Distribuído sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
