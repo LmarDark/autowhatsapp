@@ -4,7 +4,7 @@ AutoWhatsApp é uma aplicação que permite conectar o WhatsApp Web via código,
 ## 🚀 Instalação
 1. **Clone o repositório**:
 ```bash
-git clone https://github.com/seu-usuario/autowhatsapp.git
+git clone https://github.com/LmarDark/autowhatsapp.git
 ```
 2. **Instale as dependências**: Navegue até o diretório do projeto e execute o comando abaixo para instalar as dependências necessárias.
 ```bash
